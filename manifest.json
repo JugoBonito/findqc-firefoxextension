@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "FindQC URL Converter",
+  "version": "1.5",
+  "description": "Converts shopping URLs to FindQC links and modifies FindQC parameters",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{39b33498-c6e6-42cf-bb29-abf2b5e2a6bb}"
+    }
+  },
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "webRequest",
+    "webRequestBlocking"
+  ],
+  "host_permissions": [
+    "*://findqc.com/*",
+    "*://*.weidian.com/*",
+    "*://*.1688.com/*",
+    "*://*.taobao.com/*",
+    "*://*.tmall.com/*",
+    "*://*.superbuy.com/*"
+  ],
+  "action": {
+    "default_title": "Convert to FindQC"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "type": "module"
+  },
+  "icons": {
+    "48": "icon48.png",
+    "96": "icon96.png"
+  }
+} 
